@@ -16,7 +16,11 @@ public class CartPage {
     }
 
     public void increaseQty() {
-        driver.findElement(By.xpath("//button[contains(text(),'+')]")).click();
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+wait.until(ExpectedConditions.elementToBeClickable(
+    By.xpath("//button[contains(text(),'+')]")
+)).click();
     }
 
     public void removeItem() {
