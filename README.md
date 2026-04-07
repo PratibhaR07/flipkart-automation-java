@@ -19,14 +19,12 @@ It validates key user flows such as product search, comparison, cart operations,
 
 ## Project Structure
 flipkart-automation-java
-│
-├── pom.xml
-│
-├── src/main/java/pages/
-│   ├── HomePage.java
-│   ├── SearchPage.java
-│   ├── ProductPage.java
-│   └── CartPage.java
-│
-└── src/test/java/tests/
-    └── FlipkartTest.java
+pom.xml
+
+src/main/java/pages/
+  HomePage.java
+  SearchPage.java
+  ProductPage.java
+ CartPage.java
+ src/test/java/tests/
+    FlipkartTest.java
