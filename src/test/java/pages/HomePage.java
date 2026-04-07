@@ -15,7 +15,8 @@ public class HomePage {
     By searchBox = By.name("q");
 
     public void closeLoginPopup() {
-        driver.findElement(closePopup).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+wait.until(ExpectedConditions.elementToBeClickable(closePopup)).click();
     }
 
     public void searchProduct(String product) {
