@@ -1,30 +1,29 @@
-# flipkart-automation-java
-Java Automation Framework  Flipkart Assignment
-# Flipkart Automation Framework (Java)
-
-## Overview
-This project is an end-to-end test automation framework developed using Java.  
-It validates key user flows such as product search, comparison, cart operations, and quantity updates.
+# Flipkart Automation Assignment
 
 ## Tech Stack
-- Java  
-- JUnit 5  
-- Maven  
+- Java
+- Selenium WebDriver
+- TestNG
 
 ## Framework Design
-- Page Object Model (POM)  
-- Modular and scalable structure  
-- Separation of test logic and page actions  
-- Reusable methods for maintainability  
+- Page Object Model (POM)
+- Reusable Wait Utility
+- Modular and maintainable structure
 
-## Project Structure
-flipkart-automation-java
-pom.xml
+## Test Scenario Covered
+- Open Flipkart
+- Close login popup
+- Search product "mobile"
+- Validate search results
+- Select 10th & 11th product for comparison
+- Open product page
+- Add to cart
+- Validate cart and price
+- Increase quantity
+- Remove product
+- Validate empty cart message
 
-src/main/java/pages/
-  HomePage.java
-  SearchPage.java
-  ProductPage.java
- CartPage.java
- src/test/java/tests/
-    FlipkartTest.java
+
+- Dynamic elements handled using explicit waits
+- Assertions added for all critical validations
+- Flipkart UI may change, locators may require updates
